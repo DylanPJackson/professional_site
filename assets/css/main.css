@@ -2046,6 +2046,11 @@ input, select, textarea {
 			font-family: 'Font Awesome 5 Brands';
 		}
 
+                .icon.nav_contact {
+                        text-decoration:none;
+                        padding-left: 1.5em;
+                }
+
 /* sem_pres 
     this is a custom made class for all used in the seminars/presentations 
     section
@@ -2430,7 +2435,8 @@ input, select, textarea {
 	ul.icons {
 		cursor: default;
 		list-style: none;
-		padding-left: 0; 
+		padding-left: 100px;
+                text-align: left;
 	}
 
 		ul.icons li {
@@ -2879,6 +2885,15 @@ input, select, textarea {
 					color: inherit;
 				}
 
+
+            #footer .nav_contact {
+                    text-decoration: none;
+                    padding-left: 4em;
+            }
+
+            .nav_contact:hover,.nav_contact:visited,.nav_contact:active,.nav_contact:link{
+                    text-decoration: none;
+            }
 /* XLarge */
 
 	@media screen and (max-width: 1680px) {
@@ -2900,7 +2915,7 @@ input, select, textarea {
 				}
 
 				#header > footer {
-                                        padding: 1.5em;
+                                        padding: 2em;
 				}
 
                         #nav {
@@ -2984,11 +2999,10 @@ input, select, textarea {
 		
 
 
-
-                .spacing{
+                /*.spacing{
                     padding-top:105px;
                     padding-bottom:1.5em;
-                }
+                } */
 
 
 
