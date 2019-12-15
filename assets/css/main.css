@@ -2046,6 +2046,16 @@ input, select, textarea {
 			font-family: 'Font Awesome 5 Brands';
 		}
 
+/* sem_pres 
+    this is a custom made class for all used in the seminars/presentations 
+    section
+*/
+
+        .sem_pres {
+                width: 10em;
+                height: 10em;
+        }
+
 /* Image */
 
 	.image {
@@ -2166,10 +2176,8 @@ input, select, textarea {
 
 		.image.left {
 			float: left;
-			margin: 1em;
-			top: 0.25em;
-                        width: 40%;
-                        height: 40%;
+                        width: 25%;
+                        height: 25%;
 		}
 
 		.image.right {
@@ -2422,11 +2430,10 @@ input, select, textarea {
 	ul.icons {
 		cursor: default;
 		list-style: none;
-		padding-left: 0;
+		padding-left: 0; 
 	}
 
 		ul.icons li {
-			display: inline-block;
 			padding: 0 1em 0 0;
 		}
 
@@ -2893,8 +2900,12 @@ input, select, textarea {
 				}
 
 				#header > footer {
-					padding: 1.5em;
+                                        padding: 1.5em;
 				}
+
+                        #nav {
+                                padding-bottom:0em;
+                        }
 
 		/* Wrapper */
 
@@ -2925,6 +2936,10 @@ input, select, textarea {
 			#header {
 				width: 20em;
 			}
+
+                        #nav {
+                                padding-bottom:0em;
+                        }
 
 		/* Wrapper */
 
@@ -2966,7 +2981,20 @@ input, select, textarea {
 				height: 20em;
 			}
 
-		/* Header */
+		
+
+
+
+                .spacing{
+                    padding-top:105px;
+                    padding-bottom:1.5em;
+                }
+
+
+
+
+
+                /* Header */
 
 			#header {
 				-moz-backface-visibility: hidden;
