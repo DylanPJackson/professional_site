@@ -2435,11 +2435,13 @@ input, select, textarea {
 	ul.icons {
 		cursor: default;
 		list-style: none;
-		padding: 0em 0em 0em 6.5em;
-                text-align: left;
+		/*padding: 0em 0em 0em 6.5em;*/
+                /*text-align: left;*/
+                padding-left: 0;
 	}
 
 		ul.icons li {
+                        display: inline-block;
 			padding: 0 1em 0 0;
 		}
 
@@ -2804,7 +2806,7 @@ input, select, textarea {
 			}
 
 				#header > nav ul li {
-					border-top: solid 2px #5ccfb1;
+					border-top: solid 2px #fff;
 					display: block;
 					padding: 0;
 				}
