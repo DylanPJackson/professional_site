@@ -935,7 +935,7 @@ input, select, textarea {
 
 				.row.gtr-150 {
 					margin-top: 0;
-					margin-left: -2.25em;
+					margin-left: 2.25em;
 				}
 
 					.row.gtr-150 > * {
@@ -2435,7 +2435,7 @@ input, select, textarea {
 	ul.icons {
 		cursor: default;
 		list-style: none;
-		padding-left: 100px;
+		padding: 0em 0em 0em 6.5em;
                 text-align: left;
 	}
 
@@ -2919,7 +2919,7 @@ input, select, textarea {
 				}
 
                         #nav {
-                                padding-bottom:0em;
+                                height:10em;
                         }
 
 		/* Wrapper */
@@ -2952,10 +2952,14 @@ input, select, textarea {
 				width: 20em;
 			}
 
+
                         #nav {
                                 padding-bottom:0em;
                         }
-
+                        
+                        .icons { 
+                                padding-left: 100em;
+                        }
 		/* Wrapper */
 
 			#wrapper {
@@ -3036,7 +3040,7 @@ input, select, textarea {
 				#header > footer {
 					bottom: auto;
 					left: auto;
-					margin: 0.5em 0 0 0;
+					/*margin: 0.5em 0 0 0;*/
 					position: relative;
 					right: auto;
 					top: auto;
