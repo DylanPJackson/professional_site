@@ -52,6 +52,42 @@
                                         <h2>Blog</h2>
                                     </header>
                                     <section>
+                                      <h3>Django Templates Language : Simple & Powerful</h3>
+                                      <h6>May 24, 2024</h6>
+                                      <p>As always, check out the design doc for my current project, <a href="https://quip.com/EIFeAhK3yqmp/Design-Doc-CS-Profiles" target="_blank"><strong>CS Profiles!</strong></a></p>
+                                      <h4>Beginning Implementation of New Site</h4>
+                                      <p>I recently implemented the skeleton for my redesigned professional website! Teased in my previous post, I've implemented the Home Page along with a placeholder page to display some of what's
+                                      to come with the other pages. You can check it out in the video below, or check out some of the code on <a href="https://github.com/DylanPJackson/personal_site" target="_blank">GitHub.</a><p>
+                                      <video controls class="videoSize">
+                                        <source src="videos/new_website_demo1.mp4"/>
+                                      </video>
+                                      <p>You'll notice that all of the placeholder pages follow a similar format. '[Page Title] - Coming Soon!', with a picture of the mockup below. As a first draft for the website, I just wanted
+                                      to get the Home Page ironed out and simply showcase what the other pages would be. At first, I thought I had to create HTML/CSS for each Experience, Project, Passion, and Blog page. But
+                                      through the power of Django's Template Language, I was able to create these four separate pages all out of one template!</p> 
+                                      <p>It's really interesting how this works. It all starts with your URLs. In Django, when you describe a URL, you define a pattern for it, and associate a view which will load with whatever
+                                      data you pass to the pattern. Demonstrated below on <strong>Line 8</strong> for my Placeholder template page, I specify one path which expects a string. I pass this along to the view as the variable <strong>page_name</strong>.</p> 
+                                      <img src="images/urls.png" />
+                                      <p>The view I've defined is called <strong>placeholder</strong>, which you can see on <strong>Line 14</strong>. Here we can do some validation* to check if
+                                      the page_name we're given is valid. If it is, then we setup our context with the necessary information. If it's not, then we load our context with an error message. Armed with our updated
+                                      context, we render the specified HTML template.</p>
+                                      <p>*Of course instead of checking directly for each valid page name, we could externally define an enum of valid page names and reference that, but since this placeholder route will be 
+                                      overridden in future revisions, this is fine for demonstration purposes.</p>
+                                      <img src="images/views.png" />
+                                      <p>Below is the HTML for our <strong>placeholder</strong> template. It contains some unfamiliar syntax which comes from the Django Template Language. I'm able to inject logic with the use
+                                      of <code>{% [logic] %}</code>, or Line 14, and access context variables directly with <code>{{ [context variable] }}</code>, or Line 15. This enables me to ask, "Did I receive an <code>
+                                      error_message</code>?", in which case, render the error message and a link back to the home page. Otherwise, I can access the <code>image_link</code> and <code>page_name</code> and render
+                                      the appropriate 'Coming Soon' message and page preview.
+                                      <img src="images/placeholder_template.png" />
+                                      <p>There are a couple other things going on here, but that's the main power that I wanted to highlight. By defining a single generic URL, view, and template, I'm able to render multiple
+                                      pages! This is the ideal setup you'd want to use if you have a lot of pages which may load similar structured data. Think individual product pages for an e-commerce store, blog pages, etc.
+                                      Just define a generic template, and voila, all those many pages collapse into one.</p>
+                                      <h4>What's Next</h4>
+                                      <p>I'm currently working on learning / re-learning languages and technologies necessary for CS Profiles. To that end, I want to continuously publish any major learnings along the way.
+                                      So my next major step will be completing the Blog page for my new site, then hosting it with the Home / Blog pages completed. This way, my new portofilio site can stand on its own,
+                                      and I can show my activity / learning.</p>
+                                      <p>Next week, look for a post on getting started with Django in AWS / updates on the blog.</p>
+                                    </section>
+                                    <section>
                                       <h3>Initial Django Site Redesign, + The Usual</h3>
                                       <h6>May 10, 2024</h6>
                                       <p>As always, check out the design doc for my current project, <a href="https://quip.com/EIFeAhK3yqmp/Design-Doc-CS-Profiles" target="_blank"><strong>CS Profiles!</strong></a></p>

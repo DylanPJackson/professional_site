@@ -3365,3 +3365,8 @@ input, select, textarea {
 			}
 
 	}
+
+  .videoSize {
+    width: 35rem;
+    height: 25rem;
+  }
