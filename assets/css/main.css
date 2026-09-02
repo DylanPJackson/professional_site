@@ -1786,7 +1786,7 @@ input, select, textarea {
 	}
 
 	header.major h2 {
-		color: #64a2d0;
+		color: #C487E8;
 		font-size: 3.5em;
 	}
 
@@ -2641,7 +2641,7 @@ input, select, textarea {
 		input[type="reset"].primary,
 		input[type="button"].primary,
 		.button.primary {
-			background-color: #64a2d0;
+			background-color: #c487e8;
 			color: #ffffff !important;
 		}
 
@@ -2743,7 +2743,7 @@ input, select, textarea {
 			}
 
 		#header header p {
-			color: #b7eadc;
+			color: #f2c56b;
 		}
 
 		#header a {
@@ -2774,7 +2774,7 @@ input, select, textarea {
 			}
 
 			#header > header p {
-				color: #d2f2e9;
+				color: #F5D087;
 				font-style: italic;
 				margin: 1em 0 0 0;
 			}
@@ -2795,7 +2795,7 @@ input, select, textarea {
 			}
 
 				#header > footer .icons li a {
-					color: #b7eadc;
+					color: #F5D087;
 				}
 
 		#header > nav {
@@ -2831,7 +2831,7 @@ input, select, textarea {
 
 						#header > nav ul li a.active {
 							background: #fff;
-							color: #64a2d0 !important;
+							color: #c487e8 !important;
 						}
 
 					#header > nav ul li:first-child {
